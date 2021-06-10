@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body style="font-family: 'Montserrat', sans-serif;">
+        <center>
+        <h2>Family Book</h2>
+        <br><br>
+        <img src="download.jpg" width="325" height="300" id="img1">
+        <br>
+        <h3 id="name_display"></h3>
+        <button style="background-color: aqua;width: 60px;height: 25px;" onclick="next()">Next</button>
+    </center>
+        <script>
+            var names = ["Sourish","Sudeesksha","Sudhan","Samhita"];
+            var imgs = ["brother.png","sister.jpg","father.jpg","Mother.jpg"];
+            var i = 0;
+        function next()
+            {
+                if(i<4)
+                {
+            document.getElementById('img1').src = imgs[i];
+            document.getElementById('name_display').innerHTML = names[i];
+            i++;
+                }
+            }
+            </script>
+    </body>
+</html>
